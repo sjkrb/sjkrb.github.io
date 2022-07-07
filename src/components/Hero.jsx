@@ -10,7 +10,7 @@ charsMatrix[15][28] = <Char value="M" />;
 
 charsMatrix[22][30] = <Char value="↓" />;
 
-const values = [ //TODO change this to what you want 
+const values = [
   ["SAJJAD", ""],
   ["A SOFTWARE", "DEVELOPER"],
   ["A C++", "  GEEK"],

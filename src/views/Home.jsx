@@ -12,12 +12,15 @@ export const Home = () => {
         className="min-h-screen flex flex-col justify-center items-center">
         <div className="sm:w-[500px] w-screen p-5 py-20 text-lg select-none">
           <p className="mb-4">
-            Hi! I'm a C++ && Qt Developer. At the moment I work @ MojPardazan Co. 
-            a private contractor for embedded systems && software development.
+            Hi! I'm a C++ && Qt Developer. At the moment I work @ MojPardazan
+            Co. a private contractor for embedded systems && software
+            development.
           </p>
           <p className="mb-4">
-            I'm a Linux enthusiast (particularly Arch), a Doc-worm who is addicted to try novel technologies.
-            I'm a self-learner, a rationalist free thinker but your humorous teammate at the same time.
+            I'm a Linux enthusiast (particularly Arch), a Doc-worm who is
+            addicted to try novel technologies. I'm a self-learner, a
+            rationalist free thinker but your humorous teammate at the same
+            time.
           </p>
           <p className="mb-4">
             Here is my
@@ -63,8 +66,8 @@ export const Home = () => {
               title="Email">
               Chat
             </a>
-            you can contacte me to talk about anything including psychology, philosophy, tech, gaming and etc. 
-            feel free ;)
+            you can contacte me to talk about anything including psychology,
+            philosophy, tech, gaming and etc. feel free ;)
           </p>
           <p>
             Join me to play

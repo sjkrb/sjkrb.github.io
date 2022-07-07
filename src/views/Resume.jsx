@@ -1,26 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  aboutMeTranslations,
-  experiencesTranslations,
-  skillsTranslations,
-} from "../data";
-import { useTranslation } from "../utils/useTranslation";
+import { aboutMe, experiences, skills } from "../data";
 
 export const Resume = () => {
-  const translation = useTranslation();
   const [showDetails, setShowDetails] = useState(true);
-  const [aboutMe, setAboutMe] = useState(translation.get(aboutMeTranslations));
-  const [experiences, setExperiences] = useState(
-    translation.get(experiencesTranslations)
-  );
-  const [skills, setSkills] = useState(translation.get(skillsTranslations));
-
-  useEffect(() => {
-    setAboutMe(translation.get(aboutMeTranslations));
-    setExperiences(translation.get(experiencesTranslations));
-    setSkills(translation.get(skillsTranslations));
-  }, [translation]);
 
   return (
     <div className="flex flex-col items-center">
@@ -31,28 +14,9 @@ export const Resume = () => {
               className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
               to="/">
-              {translation.get("home")}
+              Home
             </Link>
             <div>
-              <span
-                className="mr-2 py-0.5 rounded-full text-dark-0 overflow-hidden
-            transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1 cursor-pointer"
-                onClick={translation.toggle}>
-                <span
-                  className={`text-dark-0 px-1.5 py-0.5 transition duration-300 rounded-l-full ${translation.isEnglish
-                      ? "bg-light-1"
-                      : "text-light-0 bg-dark-0"
-                    }`}>
-                  EN
-                </span>
-                <span
-                  className={`text-dark-0 px-1.5 py-0.5 transition duration-300 rounded-r-full ${translation.isGerman
-                      ? "bg-light-1"
-                      : "text-light-0 bg-dark-0"
-                    }`}>
-                  DE
-                </span>
-              </span>
               {showDetails ? (
                 <span
                   className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
@@ -68,23 +32,13 @@ export const Resume = () => {
                   Detail
                 </span>
               )}
-              {translation.isEnglish ? (
-                <a
-                  className="ml-2 px-3 py-0.5 bg-yellow-0 rounded-full
+              <a
+                className="ml-2 px-3 py-0.5 bg-yellow-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-                  href="/SajjadKarbasi.EN.pdf"
-                  target="_blank">
-                  Download
-                </a>
-              ) : (
-                <a
-                  className="ml-2 px-3 py-0.5 bg-yellow-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-                  href="/SajjadKarbasi.DE.pdf"
-                  target="_blank">
-                  Download
-                </a>
-              )}
+                href="/SajjadKarbasi.pdf"
+                target="_blank">
+                Download
+              </a>
             </div>
           </div>
         </div>
@@ -99,7 +53,7 @@ export const Resume = () => {
             <div className="flex flex-col print:text-sm whitespace-nowrap mt-5 md:mt-0 print:mt-0">
               <div className="mb-2 print:mb-1.5">
                 <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-dark-0 rounded-full print:text-light-0
+                  className="block max-w-[260px] px-3 py-0.5 font-bold bg-dark-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-dark-0 print:bg-black"
                   href="https://sajjadkarbasi.ir"
                   title="Webpage">
@@ -109,7 +63,7 @@ export const Resume = () => {
               </div>
               <div className="mb-2 print:mb-1.5">
                 <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-red-0 rounded-full print:text-light-0
+                  className="block max-w-[260px] px-3 py-0.5 font-bold bg-red-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-red-0"
                   href="mailto:sajjadkarbasi@gmail.com"
                   title="Email">
@@ -119,7 +73,7 @@ export const Resume = () => {
               </div>
               <div className="mb-2 print:mb-1.5">
                 <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-yellow-0 rounded-full print:text-light-0
+                  className="block max-w-[260px] px-3 py-0.5 font-bold bg-yellow-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-yellow-0 print:bg-yellow-0"
                   href="tel:+989376693558"
                   title="Phone">
@@ -129,28 +83,28 @@ export const Resume = () => {
               </div>
               <div className="flex flex-wrap">
                 <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-dark-0 rounded-full print:text-light-0
+                  className="px-5 mr-3 py-0.5 font-bold bg-dark-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-dark-0"
                   href="https://github.com/sjkrb"
                   title="Github">
                   <i className="fab fa-github-alt text-light-0" />
                 </a>
                 <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  className="px-5 mr-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
                   href="https://www.linkedin.com/in/sajjadkarbasi/"
                   title="Linkedin">
                   <i className="fab fa-linkedin-in text-light-0" />
                 </a>
                 <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  className="px-5 mr-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
                   href="https://twitter.com/karbasi_sajjad"
                   title="Twitter">
                   <i className="fab fa-twitter text-light-0" />
                 </a>
                 <a
-                  className="px-3.5 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  className="px-5 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
                   href="https://telegram.me/lord_nobunaga_oda/"
                   title="Telegram">
@@ -160,12 +114,10 @@ export const Resume = () => {
             </div>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-2xl font-bold">
-              {translation.get("aboutMe")}
-            </p>
+            <p className="mb-3 print:text-xl text-2xl font-bold">About Me</p>
             <div className="text-justify">
               {aboutMe.cover.map((line) => (
-                <span>{line}</span>
+                <span> {line}</span>
               ))}
               {showDetails ? (
                 <ul className="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
@@ -177,9 +129,7 @@ export const Resume = () => {
             </div>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-2xl font-bold">
-              {translation.get("skills")}
-            </p>
+            <p className="mb-3 print:text-xl text-2xl font-bold">Skills</p>
             <p className="mb-2">{skills.title}</p>
             <ul className="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
               {skills.data.map((skill) => (
@@ -188,16 +138,15 @@ export const Resume = () => {
             </ul>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-2xl font-bold">
-              {translation.get("experiences")}
-            </p>
+            <p className="mb-3 print:text-xl text-2xl font-bold">Experiences</p>
             <div>
               {experiences
                 .filter((exp) => exp.showExperiences)
                 .map((exp) => (
                   <div
-                    className={`py-2 first:pt-0 ${exp.showExperiencesPrint ? "" : "print:hidden"
-                      }`}>
+                    className={`py-2 first:pt-0 ${
+                      exp.showExperiencesPrint ? "" : "print:hidden"
+                    }`}>
                     <div className="flex justify-between">
                       <div>
                         <p className="print:text-lg text-lg font-semibold">
