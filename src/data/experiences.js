@@ -18,10 +18,7 @@ export const experiences = [
     ],
     contribution: "Contributions:",
     contributions: [
-      "My first duty was to write an application for data aggregation. this app aimed to decrease the amount of cost that each company should pay to \
-      test its devices with other systems. the main purpose was to define a system to be compatible with all types of protocols and a graphic interface \
-      to shape packets and define input and output (like serial port or socket). with this, any company can test its devices and combine data without \
-      a single line of code.",
+      "My first duty was to write an application for data aggregation. this app aimed to decrease the amount of cost that each company should pay to test its devices with other systems. the main purpose was to define a system to be compatible with all types of protocols and a graphic interface to shape packets and define input and output (like serial port or socket). with this, any company can test its devices and combine data without a single line of code.",
       "Another job in the company was to write protocols and GUIs for systems. both qml and Qtwidget",
       "Recent project was to write a program for zynq board with C language",
     ],
