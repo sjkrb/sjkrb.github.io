@@ -12,18 +12,18 @@ export const experiences = [
     ],
     responsible: "Responsibilities:",
     responsibilities: [
-      "develop software for gathering data and managing",
-      "developing application for zynq (arm part)",
+      "Develop software for gathering data and managing",
+      "Developing application for zynq (arm part)",
       "Qt application for devices and management protocols to communicate with them",
     ],
     contribution: "Contributions:",
     contributions: [
-      "my first duty was to write an application for data aggregation. this app aimed to decrease the amount of cost that each company should pay to",
-      " test its devices with other systems. the main purpose was to define a system to be compatible with all types of protocols and a graphic interface",
-      " to shape packets and define input and output (like serial port or socket). with this, any company can test its devices and combine data together without",
-      " a single line of code.",
-      "my other duty in the company was to write protocols and GUIs for systems. both qml and Qtwidget",
-      "my recent duty was to write a program for zynq board with C language",
+      "My first duty was to write an application for data aggregation. this app aimed to decrease the amount of cost that each company should pay to\
+       test its devices with other systems. the main purpose was to define a system to be compatible with all types of protocols and a graphic interface\
+       to shape packets and define input and output (like serial port or socket). with this, any company can test its devices and combine data without\
+       a single line of code.",
+      "Another job in the company was to write protocols and GUIs for systems. both qml and Qtwidget",
+      "Recent project was to write a program for zynq board with C language",
     ],
     achievement: "Achievements:",
     achievements: [
@@ -41,7 +41,7 @@ export const experiences = [
     company: "Padakam",
     startDate: "june 2019",
     endDate: "Aug 2020",
-    type: "half-time",
+    type: "part-time",
     location: "Tehran, Iran",
     about: [
       "Padakam was a company for developing systems for town safety",
@@ -55,12 +55,12 @@ export const experiences = [
     contribution: "Contributions:",
     contributions: [
       "writing a data Aggregation app which used octave (Matlab alternative for Linux) to manage protocols and modify them to send for another device",
-      "write an antenna pattern analyzer with an embedded board to be portable",
+      "Develop an antenna pattern analyzer with an embedded board to be portable",
     ],
     achievement: "Achievements:",
     achievements: [
-      "signal processing in C++ application",
-      "work with large project with multiple developers",
+      "Signal processing in C++ application",
+      "Work with large project with multiple developers",
     ],
     stack: ["C++", "Qt", "Linux", "signal processing" , "Lua"],
     showExperiences: true,
@@ -71,31 +71,31 @@ export const experiences = [
     company: "Rizmoj",
     startDate: "July 2017",
     endDate: "June 2019",
-    type: "half-time",
+    type: "part-time",
     location: "Tehran, Iran",
     about: [
-      "Rizmoj is a company with multiple tasks including signal processing, data transceive and desktop application development ",
+      "Rizmoj is a company with multiple tasks including signal processing, data transceive and desktop application development.",
       "My main job was to develop serial port application",
       "OpenCV to work with cameras",
-      "write webServer for embedded application",
-      "maintain and optimize Linux systems",
+      "Write webServer for embedded application",
+      "Maintain and optimize Linux systems",
     ],
     responsible: "Responsibilities:",
     responsibilities: [
       "Writing a desktop application for data aggregation",
-      "managing Linux systems and embedded devices"
+      "Managing Linux systems and embedded devices"
     ],
     contribution: "Contributions:",
     contributions: [
-      "write a flask application and config its server for ADSB data",
-      "write multiple simple GUI apps for serial port communication",
+      "Write a flask application and config its server for ADSB data",
+      "Write multiple simple GUI apps for serial port communication",
       "OpenCV app for detecting the effect of heat on the alloy to determine its elements and its features",
     ],
     achievement: "Achievements:",
     achievements: [
-      "write a website back end and server configuration",
-      "understanding the working atmosphere and",
-      "my first job so I took lots of responsibilities to know more about what field I want to follow",
+      "Write a website back end and server configuration",
+      "Understanding the working atmosphere",
+      "My first job so I took lots of responsibilities to know more about what field I want to follow",
     ],
     stack: ["C++", "Qt", "Linux", "OpenCV" , "python", "flask"],
     showExperiences: true,

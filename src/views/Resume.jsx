@@ -22,14 +22,14 @@ export const Resume = () => {
                   className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
             transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1 cursor-pointer"
                   onClick={() => setShowDetails(false)}>
-                  Detail
+                  Details
                 </span>
               ) : (
                 <span
                   className="px-3 py-0.5 bg-dark-0 rounded-full text-light-0 hover:text-light-0
             transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0 cursor-pointer"
                   onClick={() => setShowDetails(true)}>
-                  Detail
+                  Details
                 </span>
               )}
               <a

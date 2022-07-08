@@ -3,11 +3,11 @@ export const aboutMe = {
   cover: [
     "Hi! I'm a C++ && Qt Developer, At the moment I work @ MojPardazan Co. a private contractor for embedded systems && software development.",
     "I'm a Linux enthusiast (particularly Arch), a Doc-worm who is addicted to try novel technologies.",
-    "I'm a self-learner, a rationalist free thinker but your humorous teammate at the same time.",
+    "I'm a self-learner, a rationalist freethinker but your humorous teammate at the same time.",
   ],
   info: [
     "Education: BSc. Electrical Engineering",
-    "Marriage: Single",
+    "Marriage status: Single",
     "Birth Date: 28 Dec 1997",
   ],
 };

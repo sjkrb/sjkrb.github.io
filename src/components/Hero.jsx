@@ -14,7 +14,7 @@ const values = [
   ["SAJJAD", ""],
   ["A SOFTWARE", "DEVELOPER"],
   ["A C++", "  GEEK"],
-  ["A BOOK-", "WORM"],
+  ["A BOOK-", "  WORM"],
   ["A GAMER", ""],
 ];
 
