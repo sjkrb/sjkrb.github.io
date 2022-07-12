@@ -56,4 +56,23 @@ export const projects = [
     showProjects: true,
     showExperiences: true,
   },
+  {
+    title: "simple raylib game",
+    about: ["a simple raylib game", "with google test"],
+    stack: ["C++", "Raylib", "GoogleTest", "CMake"],
+    links: [
+      {
+        title: "simple raylib game",
+        href: "https://github.com/sjkrb/raylib_game",
+        titleInfo: "simple raylib game",
+        icon: "fab fa-github-alt",
+        bgColor: "bg-blue-0",
+        ringColor: "ring-blue-0",
+      },
+    ],
+    orderProjects: 10,
+    orderExperiences: 0,
+    showProjects: true,
+    showExperiences: true,
+  },
 ];
