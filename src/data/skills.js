@@ -1,5 +1,5 @@
 export const skills = {
   title:
-    "In summary, i have experience working with these tools and often use them:",
-  data: ["C++", "Qt", "OpenCV", "Embedded", "Linux", "Signal processing"],
+    "In summary, I have experience working with these tools and often use them:",
+  data: ["Modern C++ (14, 17, 20)","Arch Linux", "Qt widget/qml", "Embedded systems", "Protocol design", "OOP, Design pattern, TDD"],
 };
